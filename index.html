@@ -17,7 +17,7 @@
             <div class="slider-wrapper" tabindex="0">
 
                 <div class="item">
-                    <img src="img/01.webp" alt="Spiderman" />
+                    <img v-bind:src="slides[activeImage].image" alt="Spiderman" />
                     <div class="text">
                         <h3>Spiderman</h3>
                         <p>
@@ -30,8 +30,8 @@
                 </div>
 
                 <div class="thumbs">
-                    <button class="prev" @click="console.log(`Hello World`)"></button>
-                    <button class="next" @click="console.log(`Hello World`)"></button>
+                    <button class="prev" @click="prev()"></button>
+                    <button class="next" @click="next"></button>
                     <div class="thumb active">
                         <img src="img/01.webp" alt="Svezia" />
                     </div>
