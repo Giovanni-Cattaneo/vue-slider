@@ -44,7 +44,6 @@ createApp({
                 this.activeImage = this.slides.length -1
             }
         },
-
         next(){
             this.activeImage++
             this.thumbActive++
@@ -52,7 +51,12 @@ createApp({
             if (this.activeImage >= this.slides.length) {
                 this.activeImage = 0;
             }
-        }
+
+        },
+        changeImage(i) {
+            this.activeImage = i;
+        },
+        
     }
 
 
