@@ -31,12 +31,14 @@ createApp({
             ],
             
             activeImage : 0,
+            thumbActive : 0,
         }
    
     },
     methods: {
         prev(){
             this.activeImage--
+            this.thumbActive--
             console.log("pre image");
             if (this.activeImage < 0) {
                 this.activeImage = this.slides.length -1
@@ -45,6 +47,7 @@ createApp({
 
         next(){
             this.activeImage++
+            this.thumbActive++
             console.log("next image");
             if (this.activeImage >= this.slides.length) {
                 this.activeImage = 0;
