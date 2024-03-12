@@ -46,8 +46,8 @@ createApp({
         next(){
             this.activeImage++
             console.log("next image");
-            if (this.activeImage) {
-                
+            if (this.activeImage >= this.slides.length) {
+                this.activeImage = 0;
             }
         }
     }
