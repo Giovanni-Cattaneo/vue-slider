@@ -17,7 +17,7 @@
             <div class="slider-wrapper" tabindex="0">
 
                 <div class="item">
-                    <img src="./img/01.webp" alt="Spiderman" />
+                    <img src="img/01.webp" alt="Spiderman" />
                     <div class="text">
                         <h3>Spiderman</h3>
                         <p>
@@ -29,12 +29,23 @@
                     </div>
                 </div>
 
-                    <button class="prev" @click="console.log(`hello`)"></button>
-                    <button class="next" @click="console.log(`hello`)"></button>
-
-                <div class="thumbs" >
-                    <div class="thumb active" v-for="slide in slides">
-                        <img src="{{slide.image}}" alt="">    
+                <div class="thumbs">
+                    <button class="prev" @click="console.log(`Hello World`)"></button>
+                    <button class="next" @click="console.log(`Hello World`)"></button>
+                    <div class="thumb active">
+                        <img src="img/01.webp" alt="Svezia" />
+                    </div>
+                    <div class="thumb">
+                        <img src="img/02.webp" alt="Ratchet & Clank" />
+                    </div>
+                    <div class="thumb">
+                        <img src="img/03.webp" alt="Fortnite" />
+                    </div>
+                    <div class="thumb">
+                        <img src="img/04.webp" alt="Stray" />
+                    </div>
+                    <div class="thumb">
+                        <img src="img/05.webp" alt="Avengers" />
                     </div>
                 </div>
 
