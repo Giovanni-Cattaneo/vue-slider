@@ -1,6 +1,8 @@
 
 const { createApp } = Vue
 
+let activeImage = 0;
+
 createApp({
     data() {
         return {
